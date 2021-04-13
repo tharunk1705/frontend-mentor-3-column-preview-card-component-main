@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.flex-container {
+    margin: 5% 20%;
+    height: 50%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    overflow:hidden;
+    border-radius: 5px ;
+}
+.flex-item {
+    height: 100%;
+    margin: 0;
+    padding: 30px;
+    color: #fff;
+}
+
+.flex-item h1{
+    color:  hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+.flex-item p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.item-1 {
+    background: hsl(31, 77%, 52%) ;
+}
+.item-2 {
+    background: hsl(184, 100%, 22%) ;
+}
+.item-3 {
+    background:  hsl(179, 100%, 13%) ;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+    background-color:  hsl(0, 0%, 95%);
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+button:hover{
+    background-color:  transparent;
+    border: 2px solid #fff;
+}
+button:hover a {
+    color: #fff;
+}
+.item-1 a{
+    color: hsl(31, 77%, 52%) ;
+}
+.item-2 a{
+    color: hsl(184, 100%, 22%) ;
+}
+.item-3 a{
+    color:  hsl(179, 100%, 13%) ;
+}
+
+@media(max-width:400px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
